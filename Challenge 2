@@ -1,0 +1,10 @@
+var buttons = document.getElementsByClassName("styles__button___3Yr7O styles__small___AIqd8 styles__primary___15nU3 styles__light___3N_Kp styles__dark___3OUy6 styles__headerButton___26VlS styles__signUpButton___ItqEb styles__link___5tkGI")
+
+for (var i = 0; i < buttons.length; i++) {
+    var index = i + 1;
+    buttons[i].addEventListener("click", myFunction(index))
+}
+
+function myFunction(buttonNumber) {
+  alert ("Clicked Button " + buttonNumber);
+}
