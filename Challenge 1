@@ -1,0 +1,3 @@
+var offers = JSON.parse(document.querySelector('script[type="application/ld+json"]').innerText)['@graph'][0].offers;
+var obj = {'price': offers.price, 'currency': offers.priceCurrency}
+obj
