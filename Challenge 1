@@ -1,3 +1,5 @@
 var offers = JSON.parse(document.querySelector('script[type="application/ld+json"]').innerText)['@graph'][0].offers;
+// The JSON.parse() method parses a JSON string, constructing the JavaScript value or object described by the string
+// querySelector() method returns the first element that matches a specified CSS selector(s) in the document
 var obj = {'price': offers.price, 'currency': offers.priceCurrency}
 obj
